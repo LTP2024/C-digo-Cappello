@@ -1,0 +1,112 @@
+html,body{
+    max-width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #0f0f0f;
+    scroll-behavior: smooth;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    display: flex;
+    height: 100%;
+}
+
+.login{
+    width: 50%;
+}
+
+.titleCad{
+    text-align: center;
+    color: #e8e8e8;
+}
+
+label{
+    color: #e8e8e8;
+}
+
+hr{
+    width: 100%;
+}
+
+.inputCadastro{
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.inputButton{
+    padding: 15px;
+    background-color: #e8e8e8;
+    color: #212121;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.login_content{
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.btn_style{
+    padding: 10px;
+    width: 120px;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 5px;
+    background-color: #990002;
+    color: #e8e8e8;
+    border-radius: 5px;
+}
+
+.showPassword{
+    position: relative;
+    left: 90%;
+    margin-top: -42.5px;
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+
+.placa{
+    width: 40%;
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.vertical-line{
+    float: right;
+    height: 725px;
+    border-left: 15px solid #990002;
+}
+
+.content-placa{
+    width: 350px;
+    height: 200px;
+    color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #990002;
+    border-radius: 15px 0 0 15px ;
+    margin-top: -15%;
+}
+
+.content-placa p{
+    font-size: 30px;
+}
+
+.login{
+    margin: auto;
+}

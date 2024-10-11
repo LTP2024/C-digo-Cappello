@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo do web site-->
+    <title>Catálogo</title>
+
+    <!-- Icones da internet-->
+    <script src="https://kit.fontawesome.com/a1b6c149c0.js" crossorigin="anonymous"></script>
+
+    <!-- Link para o arquivo de css da página -->
+    <link rel="stylesheet" href="../CSS/style-catalogo.css">
+
+    <!-- Link para o ícone da logo na aba da página-->
+    <link rel="shortcut icon" href="../imagem/logo_vetor_.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Script que executa as aba de adicionar e remover -->
+    <script src="../JAVASCRIPT/modal.js"></script>
+    <a href="adm-controle.html">
+        <div class="back-menu">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+    </a>
+
+    <div class="logo">
+        <i class="fa-solid fa-film"></i>
+    </div>
+
+    <div class="topic-btns">
+        <div class="title">
+            <h1>Tela de Catálogo</h1>
+        </div>
+        <div class="btn" id="btnFunction">
+            <div class="add-catalog btn-style" id="del-catalog" onclick="addCatalog()">
+                <i class="fa-solid fa-film"></i>
+                <h3>Adicionar catálogo</h3>
+            </div>
+
+            <div class="del-catalog btn-style" id="del-catalog" onclick="delCatalog()">
+                <i class="fa-solid fa-trash"></i>
+                <h3>Deletar catálogo</h3>
+            </div>
+        </div>
+
+        <div class="ab-del" id="ab-del">
+            <div class="modal-content">
+                <div class="back-form" onclick="getBack()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <form action="#" class="del-form">
+                    <label for="nome_filme">Filmes do Sistema</label>
+                    <input type="text" name="nome-filme" id="nome-filme" placeholder="Digite aqui">
+                    <input type="submit" value="Deletar filme" class="submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="ab-add" id="ab-add">
+            <div class="modal-content">
+                <div class="back-form" onclick="getBack()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <form action="#" class="add-form">
+                    <div class="part1">
+                        <label for="nome_filme">Filmes do Sistema</label>
+                        <input type="text" name="nome-filme" id="nome-filme" placeholder="Digite aqui">
+                        <select name="categoria" id="categoria">
+                            <option value="Categoria" hidden>Categoria</option>
+                            <option value="Comédia">Comédia</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Ação">Ação</option>
+                        </select>
+                        <select name="tipo_usuario" id="tipo_usuario">
+                            <option value="Categoria" hidden>Tipo do Usuário</option>
+                            <option value="Comédia">Padrão</option>
+                            <option value="Drama">Premium</option>
+                            <option value="Drama">Para todos os usuários</option>
+                        </select>
+                        <label for="nome_filme">Descrição do FIlme</label>
+                        <input type="text" name="nome-filme" id="nome-filme" placeholder="Digite aqui">
+                        <input type="submit" value="Adicionar filme" class="submit">
+                    </div>
+
+                    <div class="part2">
+                        <div class="radio-input">
+                            <input type="radio" name="livre" id="livre"> <label for="#">Livre</label> <br>
+                        </div>
+                        <div class="radio-input">
+                            <input type="radio" name="10" id="10"> <label for="#">+10</label>   
+                        </div>
+                        <div class="radio-input">
+                            <input type="radio" name="12" id="12"> <label for="#">+12</label>
+                        </div>
+                        <div class="radio-input">
+                            <input type="radio" name="14" id="14"> <label for="#">+14</label>
+                        </div>
+                        <div class="radio-input">
+                            <input type="radio" name="16" id="16"> <label for="#">+16</label>
+                        </div>
+                        <div class="radio-input">
+                            <input type="radio" name="18" id="18"> <label for="#">+18</label>
+                        </div>
+                    </div>
+
+                    <div class="part3">
+                        <div class="film">
+                            <img src="#" alt="#">
+                        </div>
+                        <input type="file" name="film" id="film-btn" class="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

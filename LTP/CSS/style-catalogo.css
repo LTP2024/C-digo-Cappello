@@ -1,0 +1,213 @@
+html,body{
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #0f0f0f;
+    scroll-behavior: smooth;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+.back-menu{
+    color: #e8e8e8;
+    font-size: 50px;
+    position: absolute;
+    left: 2.5%;
+    top: 1%;
+    transition: 0.3s;
+}
+
+.back-menu .fa-arrow-left{
+    transition: 0.3s;
+}
+
+.back-menu:hover .fa-arrow-left{
+    transform: scale(1.1);
+}
+
+body{
+    display: flex;
+    height: 100%;
+}
+
+.logo{
+    color: #e8e8e8;
+    height: 726px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 80px;
+    width: 25%;
+}
+
+.logo i{
+    margin-top: 15% auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-color: #990002;
+    text-align: center;
+    border-radius: 15px 0px 15px 15px;
+}
+
+.topic-btns{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.title{
+    background-color: #990002;
+    color: #e8e8e8;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0 15px 15px 0;
+    margin: 5.90% 0 0 0;
+    width: 90%;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.btn-style{
+    background-color: #990002;
+    border-radius: 15px;
+    color: #e8e8e8;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btn-style:hover{
+    background-color: #e8e8e8;
+    color: #990002;
+}
+
+.btn-style i{
+    font-size: 70px;
+}
+
+.ab-add{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+}
+
+.modal-content{
+    background-color: #990002;
+    width: 70%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.del-form{
+    display: flex;
+    flex-direction: column;
+    margin: 7.5% 0;
+    width: 50%;
+    padding: 50px;
+}
+
+form label{
+    color: #e8e8e8;
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.submit{
+    margin-top: 25px;
+    color: #e8e8e8;
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 15px;
+}
+
+select{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.ab-del{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+}
+
+.add-form{
+    display: flex;
+    margin: 2.5% 0;
+    width: 100%;
+    padding: 50px;
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-right: 20px;
+}
+
+.part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+}
+
+.part3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.film{
+    border: 3px solid #212121;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 325px;
+    height: 182.81px;
+}
+
+.back-form{
+    position: absolute;
+    font-size: 30px;
+    color: #e8e8e8;
+    padding: 10px;
+}
+
+.fade{
+    animation: fadein 0.4s;
+}
+
+.fadeo{
+    animation: fadeout 0.4s;
+}
+
+@keyframes fadein{
+    from { opacity: 0; margin-top: -30px; }
+    to   { opacity: 1; margin-top: 0; }
+}
+
+@keyframes fadeout{
+    from { opacity: 1; margin-top: 0; }
+    to   { opacity: 0; margin-top: -30px;}
+}
